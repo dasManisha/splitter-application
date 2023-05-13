@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import './reset.css';
+
+html {
+  --base-green: hsla(173, 61%, 77%, 1);
+  --bg-shade: hsla(203, 50%, 97%, 1);
+  --text-color: hsla(184, 7%, 39%, 1);
+  --error: hsla(13, 32%, 57%, 1);
+  --dark-green: hsla(183, 100%, 15%);
+  --background: #c5e4e7;
+  --medium-green: #0d686d;
+  --primary-color: #c5e4e7;
+  --strok-green: #5baba2;
+  --dark-cyan: #2cc0ad;
+  --dark-gray: #9fb3b2;
+  --base-gray: #00474b;
+  --normal: 400;
+  --strok-green: hsla(172, 68%, 45%, 1);
+  --dark-strokgreen: hsla(183, 79%, 24%, 1);
+  --splitter-textColor: #00474b;
+  --unit-text: hsla(172, 63%, 46%, 1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

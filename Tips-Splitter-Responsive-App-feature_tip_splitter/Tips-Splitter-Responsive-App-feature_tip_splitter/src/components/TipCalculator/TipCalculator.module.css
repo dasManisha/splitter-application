@@ -1,0 +1,31 @@
+.splitterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 61px;
+  gap: 66px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.splitterName {
+  line-height: 36px;
+  color: var(--dark-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 20px;
+  letter-spacing: 0.47em;
+}
+
+@media (max-width: 600px) {
+  .splitterContainer {
+    gap: 32px;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+  }
+}

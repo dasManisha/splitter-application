@@ -1,0 +1,106 @@
+/* The top level container of the component*/
+.wrapper {
+  width: 566px;
+  height: 575px;
+  background-color: var(--dark-green);
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.displayContainer {
+  display: flex;
+  margin: 60px;
+  flex-direction: column;
+}
+.displayContainer p {
+  color: #9fb3b2;
+}
+.tipContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 120px;
+  text-align: left;
+}
+
+.tipDisplay {
+  flex-grow: 1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.1rem;
+  color: white;
+  margin-top: 21px;
+}
+
+.unit {
+  padding-top: 6px;
+  font-size: 3rem;
+  color: var(--unit-text);
+}
+
+.resetButton {
+  position: relative;
+  display: flex;
+  margin: 34px 60px;
+  top: 15%;
+  border-radius: 7px;
+  line-height: 2.25;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  height: 62px;
+}
+
+.btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  background-color: var(--strok-green);
+  border-radius: 7px;
+  color: var(--dark-green);
+  border: none;
+}
+
+.disable {
+  border: none;
+  background-color: var(--dark-strokgreen);
+  color: var(--dark-green);
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 310px;
+    height: 257px;
+  }
+
+  .displayContainer {
+    display: block;
+    margin: 16px 18px;
+  }
+
+  .resetButton {
+    top: 10%;
+    margin: 35px 15px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+  .btn {
+    border-radius: 4px;
+  }
+
+  .unit {
+    padding-top: 9px;
+    font-size: 1.812rem;
+    /* line-height: 2.75; */
+    letter-spacing: 0.1rem;
+    color: var(--unit-text);
+  }
+
+  .tipDisplay {
+    flex-grow: 1;
+    margin-top: 0px;
+    font-size: 0.75rem;
+    line-height: 1.125;
+    margin-top: 10px;
+  }
+}

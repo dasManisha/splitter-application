@@ -1,0 +1,94 @@
+/* The top level container of the component*/
+
+.wrapper {
+}
+
+.wrapper .input {
+  padding: 8px 24px;
+  font-size: 2rem;
+  text-align: right;
+  color: inherit;
+  width: 100%;
+  background-color: var(--bg-shade);
+  border: 2px solid transparent;
+  color: var(--dark-green);
+  border-radius: 6px;
+}
+
+.wrapper .input:focus {
+  outline: none;
+  border: 2px solid var(--base-green);
+}
+
+.labelContainer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.singleLine {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.inputLabel {
+  color: var(--text-color);
+}
+.errorMessage {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+  color: var(--error);
+}
+
+.withError {
+  padding: 8px 24px;
+  font-size: 2rem;
+  text-align: right;
+  color: inherit;
+  width: 100%;
+  outline: none;
+  background-color: var(--bg-shade);
+  border: 2px solid var(--error);
+  color: var(--dark-green);
+  border-radius: 6px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--bg-shade);
+}
+
+.imageContainer {
+  position: absolute;
+  padding-left: 20px;
+  max-width: 40px;
+  align-self: center;
+}
+
+/* width comes from parent and height from children */
+
+@media (max-width: 600px) {
+  /* Phones */
+  .wrapper .input {
+    font-size: 1.5rem;
+    border-radius: 6px;
+  }
+
+  .labelContainer {
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+
+  .imageContainer {
+    padding: 14px;
+  }
+
+  .withError {
+    font-size: 1.5rem;
+  }
+}

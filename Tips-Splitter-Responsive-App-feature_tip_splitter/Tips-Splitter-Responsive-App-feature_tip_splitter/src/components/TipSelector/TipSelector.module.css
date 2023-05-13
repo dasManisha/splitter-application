@@ -1,0 +1,27 @@
+/* The top level container of the component*/
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 21px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.labelContainer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    gap: 16px;
+  }
+
+  .labelContainer {
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+}
